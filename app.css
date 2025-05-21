@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@600;700&display=swap');
+body{
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #1b1b1b91;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(2px);
+    z-index: 10;
+}
+header span img{
+    width: 20px;
+}
+
+header ul{
+    font-family: Montserrat, sans-serif;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+header ul li{
+    margin: 0px 25px;
+    transition: all 0.3s;
+}
+header ul li:hover{
+    color: #FFD700;
+}
+.news{
+    display: none;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+div{
+    width: 800px;
+}
+
+p{
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #F2F2F2;
+    font-weight: 700;
+}
+h1{
+    color:aqua;
+}
+h3{
+    color: #545454;
+}
+
+img {
+    width: 800px;
+}
+.main button{
+    width: 400px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFD700;
+    font-weight: 500;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.4s;
+}
+.main button:hover{
+    transform: scale(1.05);
+}
+
+.section2, .section3, .section4{
+    margin-top: 60px;
+}
+
+.section2 h2, .section3 h2, .section4 h2{
+    color: aqua;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+.section2 h3, .section3 h3, .section4 h3{
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+.section2 img{
+    margin-top: 60px;
+}
+.section2 video{
+    width: 700px;
+    margin-top: 30px;
+}
+.section3 img{
+    width: 90%;
+    margin-bottom: -30px;
+    margin-top: 20px;
+}
+.section4 video{
+    width: 800px;
+    margin-top: 50px;
+}
+
+.buy{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buy999{
+    margin-top: 30px;
+    width: 300px;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+footer {
+    display: flex;
+    margin-top: 80px;
+    border-top: 1px solid #545454;
+}
+footer span{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+footer span p{
+    color: #F2F2F2;
+}
+footer span a{
+    text-decoration: none;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #545454;
+    transition: all 0.3s;
+}
+footer span a:hover{
+    color: #F2F2F2;
+}
+footer span input {
+    width: 300px;
+    height: 45px;
+    border: none;
+    outline: none;
+    background-color: #545454;
+    border-radius: 30px;
+    color: #F2F2F2;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+}
+footer span button{
+    width: 300px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #FFD700;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+@media (max-width: 768px){
+    header{
+        justify-content: space-between;
+        padding: 7px 30px 7px 15px;
+    }
+    header ul{
+        display: none;
+    }
+    .news{
+        display: block;
+        color: #F2F2F2;
+        font-family: Montserrat, sans-serif;
+        text-decoration: none;
+    }
+    .main{
+        width: 100%;
+        margin-top: 0;
+    }
+    div{
+        width: 100%;
+    }
+    h1{
+        font-size: 1.35rem;
+    }
+    h2{
+        font-size: 1.1rem;
+    }
+    h3{
+        font-size: 0.9rem;
+    }
+    img{
+        width: 100%;
+    }
+    .main button{
+        width: 90%;
+        height: 40px;
+    }
+    .section2 video{
+        width: 100%;
+    }
+    .section4 video{
+        width: 100%;
+    }
+    .buy999{
+        width: 90%;
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    footer span{
+        padding: 10px 0px 10px 0px;
+    }
+    footer span p{
+        margin-bottom: 5px;
+        font-weight: 800;
+    }
+    footer span a{
+        font-size: 0.9rem;
+        margin-top: 6px;
+        font-weight: 300;
+    }
+    footer span input{
+        width: 80%;
+        height: 40px;
+    }
+    footer span button{
+        width: 70%;
+        height: 40px;
+    }
+}
